@@ -32,7 +32,7 @@ cloudinary.config({
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://xclone-zeta.vercel.app",
     credentials: true,
   })
 );
