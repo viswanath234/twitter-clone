@@ -31,13 +31,6 @@ cloudinary.config({
 });
 
 app.use(
-  cors({
-    origin: "https://xclone-zeta.vercel.app",
-    credentials: true,
-  })
-);
-
-app.use(
   express.json({
     limit: "5mb",
   })
