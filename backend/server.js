@@ -14,6 +14,13 @@ import path from "path";
 dotenv.config();
 
 const app = express();
+app.use(
+  cors({
+    origin: "https://xclone-zeta.vercel.app",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 const __dirname = path.resolve();
 const PORT = process.env.PORT;
 
