@@ -13,15 +13,7 @@ import path from "path";
 
 dotenv.config();
 
-app.options("*", cors());
 const app = express();
-app.use(
-  cors({
-    origin: "https://twitter-clone-dtj8.vercel.app",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
 const __dirname = path.resolve();
 const PORT = process.env.PORT;
 
@@ -30,6 +22,13 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET_KEY,
 });
+
+app.use(
+  cors({
+    origin: "https://xclone-zeta.vercel.app",
+    credentials: true,
+  })
+);
 
 app.use(
   express.json({
