@@ -16,7 +16,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "",
+    origin: "https://twitter-clone-dtj8.vercel.app/login",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
