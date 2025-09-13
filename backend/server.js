@@ -16,7 +16,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://xclone-zeta.vercel.app",
+    origin: "",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
