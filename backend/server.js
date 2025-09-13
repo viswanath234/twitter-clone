@@ -13,6 +13,7 @@ import path from "path";
 
 dotenv.config();
 
+app.options("*", cors());
 const app = express();
 app.use(
   cors({
